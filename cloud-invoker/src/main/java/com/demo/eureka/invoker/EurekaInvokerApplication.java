@@ -13,10 +13,10 @@ public class EurekaInvokerApplication {
         SpringApplication.run(EurekaInvokerApplication.class, args);
         System.out.println("-----------------------自定义负载均衡70%----------------------------@EnableDiscoveryClient");
         System.out.println("服务调用者: http://localhost:9000/router");
+        System.out.println("使用spring封装LoadBalancerClient: http://localhost:9000/userLb");
+        System.out.println("使用原生ribbon: http://localhost:9000/defaultValue");
 
-
-        System.out.println("测试不成功补救调试:http://localhost:8080/person/10086");
-        System.out.println("服务调用者: http://localhost:9000/getPlayerInfoList");
+        System.out.println("或者自定义拦截会重定向的: http://localhost:9000/lanJie");
 
     }
 
